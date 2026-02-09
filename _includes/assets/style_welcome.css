@@ -1,0 +1,188 @@
+/*** Z-INDEXES ***/
+.welcome-text h2 span:last-child { position: relative; z-index: 8; }
+/*** END Z-INDEXES ***/
+
+/*** COLORS ***/{% assign vColorPurple = "#340853" %}
+{ background-color: {{ vColorPurple }}; }
+
+html { background-color: #eee; }
+
+.welcome-message-box { background-color: white; }
+/*** END COLORS ***/
+
+/*** FONTS ***/
+@font-face{font-family:"Bauhaus";src:url("../../assets/fonts/BAUHS93.TTF");}
+@font-face{font-family:"Impact";src:url("../../assets/fonts/impact.TTF");}
+
+main { font-family: "Impact"; word-spacing: .15em; }
+ { font-family: "Bauhaus"; line-height: 1.15em; word-spacing: initial !important; }
+
+.welcome-text h2 span:last-child {// font-size: .6em; }
+ 
+.welcome-text h2 { text-align: right; }
+footer a { text-decoration: underline; }
+/*** END FONTS ***/
+
+/*** MEDIA ***/
+* { background-size: cover; }
+
+.welcome:before, .welcome-text:before { background-image: url("/assets/images/@b19andmother_background.png"); }
+.welcome:before, .welcome-text:before {
+	background-size: auto 100%;
+//	background-size: contain !important;
+	background-position: center top;
+	background-repeat: no-repeat;
+	
+//	background-color: purple;
+}
+
+.welcome-message-box figure img { background-image: url("/assets/images/madamella-speech.png"); }
+.welcome-message-box figure img {
+	background-position: center;
+}
+
+.u-fancyText {
+    background-image: url("../../assets/images/purple-background.png");
+    background-size: cover;
+    background-position: fixed;
+    background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -o-background-clip: text;
+    background-fill-color: transparent;
+        -webkit-background-fill-color: transparent;
+        -moz-background-fill-color: transparent;
+        -o-background-fill-color: transparent;
+    color: transparent;
+}
+
+ { background-image: url("../../assets/images/purple-background.png"); background-color: {{ vColorPurple }}; }
+/*** END MEDIA ***/
+
+/*** COMPONENTS ***/
+	/*** COMMONS ***/
+	.welcome:before, .welcome-text:before,
+	.welcome-message-box,
+	.welcome-message-box figure img { border-radius: .5em; }
+	.welcome-text div span { border-radius: 1.8em; }
+	
+	main { padding: 0 1em; }
+	footer,
+	header { padding: 1.8em 0; }
+
+	/*** .welcome ***/
+	.welcome-message-box,
+	.welcome-message-box div { display: flex; }
+	.welcome-message-box div { flex-direction: column; }
+	
+	.welcome-message-box figure { width: 40%; }
+	.welcome-message-box div { width: 60%; }
+	
+	.welcome-message-box figure { position: relative; }
+	.welcome-message-box figure:before {
+		content: "";
+		position: absolute;
+			top: 0; bottom: 0; left: 0; right: 0; margin: auto;
+		width: 1.8em; height: 1.8em;
+		border-radius: 50%;
+	}
+	
+	.welcome,
+	.welcome-text { position: relative; }
+	.welcome:before,
+	.welcome-text:before {
+		content: "";
+		position: absolute; bottom: 0;
+		width: auto; height: 80%; aspect-ratio: 3/4;
+	}
+	
+	.welcome-text h2 span {
+		display: block;
+	}
+/*** END COMPONENTS ***/
+
+/*** INTERACTIVITY ***/
+ { cursor: pointer; }
+/*** END INTERACTIVITY ***/
+
+/*** MEDIA-QUERIES ***/
+@media all and (max-width: 50em) {
+	/*** FONTS ***/
+    body, html, main { font-size: 14px; }
+	
+	.welcome-text h2 { font-size: 4em; }
+
+	/*** COMPONENTS: .welcome ***/
+	.welcome:before,
+	.welcome-text:before { right: 40%; }
+	
+	.welcome-message-box { padding: .5em; }
+		.welcome-message-box figure { margin-right: .5em; }
+	.welcome-message-box,
+	.welcome-text { margin: 1.8em 0; }
+	.welcome-text div { padding: 0 1em; }
+	.welcome-text div p { padding: 1em 0; }
+	.welcome-text div span { padding: .5em 1em; }
+		/*** VIEWPORT: .welcome ***/
+		.welcome-text div { position: relative; z-index: 8; }
+		.welcome:before { display: none !important; }
+
+		.welcome-text div { margin: 1.8em 0; }
+}
+@media all and (min-width: 50em) {
+	/*** FONTS ***/
+    body, html, main { font-size: 18px; }
+	
+	.welcome-text h2 { font-size: 6em; }
+	
+	/*** COMPONENTS: .welcome ***/
+	.welcome:before,
+	.welcome-text:before { right: 50%; }
+
+	.welcome-message-box { padding: 1em; }
+		.welcome-message-box figure { margin-right: 1em; }
+	.welcome-text { margin: 4em 0; }
+	.welcome-text div { padding: 0 1.8em; }
+	.welcome-text div p { padding: 1.8em 0; }
+	.welcome-text div span { padding: 1em 1.8em; }
+		/*** VIEWPORT: .welcome ***/
+		.welcome-text { display: flex; }
+		.welcome-text h2 { flex: 1; }
+	
+		.welcome-text div { width: 40%; }
+		
+		.welcome-message-box {
+			position: relative; left: 60%;
+			width: 40%;
+		}
+		
+		.welcome-text:before { display: none !important; }
+		.welcome-text h2 span:last-child {
+			position: relative; left: 1.8em;
+			display: inline-block;
+		}
+}
+/*** END MEDIA-QUERIES ***/
+
+/*** CSS TOOLS ***/
+.CSScentered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CSSmidWrap {
+    max-width: 70em;
+    margin: 0 auto;
+}
+
+.CSSspacer { flex: 1; }
+/*** END DECORATION ***/
+
+/*** CSS-HACKS ***/
+.welcome-message-box h4 {// margin-bottom: 1.8em; }
+/*** END CSS-HACKS ***/
+
+/*** TO-DELETE ***/
+.welcome-text div span { background-color: purple; }
+/*** END TO-DELETE ***/

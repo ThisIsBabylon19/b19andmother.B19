@@ -1,0 +1,15 @@
+---
+---
+<!DOCTYPE html>
+<html class="js-html pg-{{ page.key }}" appStyle="theClub">
+	<head>
+		{% include components/meta-tags.html %}
+	</head>
+	
+	<body>
+		{{ content }}
+
+		{% if page.layout != "letters" %}
+		<script src="../assets/scripts/chapter-she-dot-babylon19-dot-org.js"></script>{% endif %}
+	</body>
+</html>
