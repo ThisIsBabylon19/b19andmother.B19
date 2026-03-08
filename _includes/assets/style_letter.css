@@ -55,6 +55,18 @@ main { font-family: "Impact"; word-spacing: .15em; }
 	background-size: cover;
 }
 
+.letter_aside.is-left .letter_aside-placeholder {
+	background-image: url("/assets/images/item_ink.png");
+	background-position: left bottom;
+}
+.letter_aside.is-right .letter_aside-placeholder {
+	background-image: url("/assets/images/item_ink.png");
+	background-position: right top;
+}
+.letter_aside-placeholder {
+	background-repeat: no-repeat;
+	background-size: contain;
+}
 /*** END MEDIA ***/
 
 /*** UTILITIES ***/
@@ -111,9 +123,14 @@ main { font-family: "Impact"; word-spacing: .15em; }
 	}
 	
 	.letter_aside {
+		position: relative;
 		display: block;
 		width: 24%;
-//		background-color: purple;
+	}
+	.letter_aside-placeholder {
+		position: absolute; bottom: 0; left: 0;
+		width: 100%; height: 100%;
+		display: block;
 	}
 /*** END COMPONENTS ***/
 
@@ -193,4 +210,8 @@ input[type="checkbox"],
 }
 
 .CSSspacer { flex: 1; }
-/*** END DECORATION ***/
+/*** END TOOLS ***/
+
+/*** TO-DELETE ***/
+.letter_aside-placeholder { background-image: initial !important; }
+/*** END TO-DELETE ***/
