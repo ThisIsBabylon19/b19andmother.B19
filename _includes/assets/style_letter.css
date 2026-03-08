@@ -26,6 +26,7 @@ main { font-family: "Impact"; word-spacing: .15em; }
 
 .footer { text-align: right; }
 .footer a { text-decoration: underline; }
+.letter-form-fieldset span.d-fontLetter { font-weight: bold; }
 /*** END FONTS ***/
 
 /*** MEDIA ***/
@@ -128,7 +129,7 @@ input[type="checkbox"],
 	
 	.header h1,
 	.letter-form-fieldset h6 { font-size: 1.8em; }
-	.letter-form-fieldset span.d-fontLetter { font-size: 1.24em; }
+	.letter-form-fieldset span.d-fontLetter { font-size: 1.8em; }
 
 	/*** COMPONENTS: .letter ***/
 	.letter-form,
@@ -149,6 +150,7 @@ input[type="checkbox"],
 		}
 		/*** CSS-HACKS: .letter ***/
 		.letter-form-header { padding: 1em .5em; }
+		.letter-form-fieldset span.d-fontLetter { margin-top: 1em; }
 }
 @media all and (min-width: 50em) {
 	/*** FONTS ***/
