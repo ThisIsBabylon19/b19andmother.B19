@@ -1,5 +1,5 @@
 ---
-layout: welcome
+layout: letter
 permalink: /
 ---
 AAA
