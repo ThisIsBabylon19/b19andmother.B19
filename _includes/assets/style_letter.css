@@ -112,6 +112,10 @@ main { font-family: "Impact"; word-spacing: .15em; }
 		border-radius: .18em;
 	}
 	.letter-form-fieldset div input[type="checkbox"] { width: 1.18em; height: 1.18em; }
+	.letter-form-fieldset div p {
+		display: inline;
+		padding-left: .5em;
+	}
 	.letter-form-fieldset div span {
 		display: block;
 		margin-bottom: .5em;
