@@ -56,7 +56,10 @@ footer a { text-decoration: underline; }
     color: transparent;
 }
 
- { background-image: url("../../assets/images/purple-background.png"); background-color: {{ vColorPurple }}; }
+.welcome form { background-image: url("../../assets/images/purple-background.png"); background-color: {{ vColorPurple }}; }
+.welcome form {
+	background-size: cover;
+}
 /*** END MEDIA ***/
 
 /*** COMPONENTS ***/
@@ -98,6 +101,23 @@ footer a { text-decoration: underline; }
 	
 	.welcome-text h2 span {
 		display: block;
+	}
+	
+	.welcome form { display: flex; }
+	.welcome form input[type="email"] { flex: 1; }
+
+	.welcome aside {
+		text-align: right;
+		padding-right: 4em;
+	}
+	.welcome form {
+		border-radius: 4em; overflow: hidden;
+		
+		background-image: initial;
+	}
+	.welcome form input[type="submit"],
+	.welcome form input[type="email"] {
+		padding: .5em 1em;
 	}
 /*** END COMPONENTS ***/
 
