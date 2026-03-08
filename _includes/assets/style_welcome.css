@@ -106,6 +106,9 @@ footer a { text-decoration: underline; }
 	.welcome form { display: flex; }
 	.welcome form input[type="email"] { flex: 1; }
 
+	.welcome-text div {
+//		padding-top: 18em !important;
+	}
 	.welcome aside {
 		text-align: right;
 		padding-right: 4em;
