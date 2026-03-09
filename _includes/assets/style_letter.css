@@ -25,7 +25,7 @@ main { font-family: "Impact"; word-spacing: .15em; }
 .d-fontLetter {
 	font-family: "AlexBrush"; word-spacing: .24em;
 	font-weight: bold;
-	font-size: 1.8em;
+	font-size: 1.4em;
 }
 
 .footer { text-align: right; }
@@ -154,7 +154,7 @@ input[type="checkbox"],
 	
 	.header h1,
 	.letter-form-fieldset h6 { font-size: 1.8em; }
-	.letter-form-fieldset span.d-fontLetter { font-size: 1.8em; }
+	.letter-form-fieldset span.d-fontLetter { font-size: 2.4em; }
 
 	/*** COMPONENTS: .letter ***/
 	.letter-form,
@@ -183,7 +183,7 @@ input[type="checkbox"],
 	
 	.header h1,
 	.letter-form-fieldset h6 { font-size: 2.4em; }
-	.letter-form-fieldset span.d-fontLetter { font-size: 1.8em; }
+	.letter-form-fieldset span.d-fontLetter { font-size: 2.4em; }
 	
 	/*** COMPONENTS: .letter ***/
 	.letter-form,
