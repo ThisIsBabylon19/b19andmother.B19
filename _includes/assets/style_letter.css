@@ -22,7 +22,11 @@ main { font-family: "Impact"; word-spacing: .15em; }
 .letter-form-fieldset div input,
 .letter-form-fieldset div select,
 .letter-form-fieldset div textarea,
-.d-fontLetter { font-family: "AlexBrush"; word-spacing: .24em; }
+.d-fontLetter {
+	font-family: "AlexBrush"; word-spacing: .24em;
+	font-weight: bold;
+	font-size: 1.18em;
+}
 
 .footer { text-align: right; }
 .footer a { text-decoration: underline; }
